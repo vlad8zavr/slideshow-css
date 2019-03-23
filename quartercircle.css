@@ -1,0 +1,93 @@
+
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	background: transparent;
+}
+
+.glider {
+	width: 50vh;
+	height: 50vh;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+
+}
+
+.glide {
+	display: flex;
+	float: left;
+	color: white;
+	text-transform: uppercase;
+
+	animation: rotate 16s infinite;
+}
+
+.line1 .line2 {
+	float: left;
+}
+
+.item {
+	width: 50vh;
+	height: 50vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border-top-right-radius: 0;
+	border-top-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.glide span {
+	font-size: 36px;
+	font-weight: 400;
+}
+
+.glide1 {
+	background: #3498db;
+	border-top-left-radius: 100%;
+}
+
+.glide2 {
+	background: #2ecc71;
+	border-bottom-left-radius: 100%;
+}
+
+.glide3 {
+	background: #e74c3c;
+	border-top-right-radius: 100%;
+}
+
+.glide4 {
+	background: #9b59b6;
+	border-bottom-right-radius: 100%;
+}
+
+.glide2 span {
+	transform: rotate(-90deg);
+}
+
+.glide3 span {
+	transform: rotate(90deg);
+}
+
+.glide4 span {
+	transform: rotate(180deg);
+}
+
+
+@keyframes rotate {
+	 0% {  }
+	15% { transform: rotate(0deg); }
+	25% { transform: rotate(90deg); }
+	40% { transform: rotate(90deg); }
+	50% { transform: rotate(180deg); }
+	65% { transform: rotate(180deg); }
+	75% { transform: rotate(270deg); }
+	90% { transform: rotate(270deg); }
+	100% { transform: rotate(360deg); }
+}
